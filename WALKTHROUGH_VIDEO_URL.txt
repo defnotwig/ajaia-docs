@@ -1,4 +1,4 @@
-Walkthrough video URL: <paste Loom or YouTube unlisted link here>
+Walkthrough video URL: https://youtu.be/pQBzrpTaECc
 
 ### Short Walkthrough Video Checklist:
 1. [ ] Introduction and stack description (Next.js, Tailwind, SQLite, TipTap, TypeScript, Vitest).

@@ -9,7 +9,7 @@ Assignment: Ajaia Collaborative Document Editor
 
 - **Google Drive Folder**: https://drive.google.com/drive/u/0/folders/1DqpA47PC8CHs1dJruQxh-gv2z2sO12Og
 - **Live Product URL**: https://ajaia-docs-chi-puce.vercel.app
-- **Walkthrough Video URL**: _TO_BE_FILLED_AFTER_RECORDING_
+- **Walkthrough Video URL**: https://youtu.be/pQBzrpTaECc
 - **Source Code**: https://github.com/defnotwig/ajaia-docs
 
 ## 1. Exactly What Is Included
