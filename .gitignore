@@ -37,9 +37,8 @@ ajaia-docs.db-wal
 ajaia-docs.db-shm
 *.test.db
 
-# vercel
-.vercel
-
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+.vercel

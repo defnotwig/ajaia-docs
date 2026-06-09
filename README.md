@@ -2,6 +2,8 @@
 
 AJAIA Docs is a collaborative document editor built as a focused take-home product slice for Ajaia. The implementation prioritizes a clean reviewer flow: seeded login, document creation and import, rich-text editing, sharing, comments, version history, and document-grounded AI assistance.
 
+Live review deployment: [https://ajaia-docs-chi-puce.vercel.app](https://ajaia-docs-chi-puce.vercel.app)
+
 ## Stack
 
 - **Frontend**: Next.js 14 App Router, React, TypeScript
@@ -99,6 +101,8 @@ For Vercel deployment, the app uses an ephemeral SQLite database in `/tmp`. On c
 - serves the app without requiring a manual `seed` step
 
 That keeps the live review environment testable without introducing paid infrastructure. For a production system, this would be replaced with a managed persistent database.
+
+Current hosted review URL: [https://ajaia-docs-chi-puce.vercel.app](https://ajaia-docs-chi-puce.vercel.app)
 
 ## Included Documentation
 
