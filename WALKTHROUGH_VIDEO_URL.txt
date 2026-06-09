@@ -1,0 +1,16 @@
+Walkthrough video URL: <paste Loom or YouTube unlisted link here>
+
+### Short Walkthrough Video Checklist:
+1. [ ] Introduction and stack description (Next.js, Tailwind, SQLite, TipTap, TypeScript, Vitest).
+2. [ ] Login Switcher: log in as Gabriel Rivera.
+3. [ ] Dashboard: show Empty States, My Documents, and Shared With Me.
+4. [ ] Create a Document, rename it, and write rich-text (Bold, Italic, Underline, Heading sizes, bullet/numbered lists).
+5. [ ] Show Auto-Save pill indicator updating (debouncing save queries to SQLite on the server).
+6. [ ] Show Save & Refresh persistence (refreshing the page maintains document title and formatting).
+7. [ ] Go to Dashboard, click Import File and select a .txt or .md file. Route immediately to the new imported document.
+8. [ ] Share the document with another seeded user (maria@ajaia.test) with 'Editor' permissions.
+9. [ ] Test Access Control Security: log out, log in as Alex Cruz (who has no access), and paste the URL. Show the 'Access Denied' screen.
+10. [ ] Log out, log in as Maria Santos, check the 'Shared With Me' dashboard list, click the document, and make an edit.
+11. [ ] Add a Comment in the discussions panel. Show that the comment persists.
+12. [ ] Take a Version snapshot, change content, and restore the snapshot.
+13. [ ] Demonstrate Vitest automated command (`npm run test`) running and all 5 access-control checks passing.
