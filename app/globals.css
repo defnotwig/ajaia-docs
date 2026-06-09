@@ -1,0 +1,174 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 210 40% 98%; /* Slate-50 equivalent */
+  --foreground: 222.2 84% 4.9%;
+}
+
+body {
+  color: hsl(var(--foreground));
+  background-color: #f8fafc; /* Slate-50 */
+}
+
+/* TipTap Editor Custom Styles */
+.tiptap-editor .ProseMirror {
+  outline: none;
+  min-height: 400px;
+}
+
+/* Bullet list and Ordered list styles for TipTap */
+.tiptap-editor ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.tiptap-editor ol {
+  list-style-type: decimal;
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.tiptap-editor li {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.tiptap-editor h1 {
+  font-size: 1.875rem; /* 30px */
+  font-weight: 700;
+  color: #1e40af; /* Blue-800 (MS Word Style Blue) */
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.25;
+  border-bottom: 2px solid #3b82f6; /* Blue bottom underline */
+  padding-bottom: 0.35rem;
+}
+
+.tiptap-editor h2 {
+  font-size: 1.35rem; /* 21px */
+  font-weight: 600;
+  color: #1d4ed8; /* Blue-700 */
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+}
+
+.tiptap-editor p {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.625;
+  color: #475569; /* slate-600 */
+}
+
+/* Remote collaborator cursors (live presence) */
+.remote-cursor {
+  position: relative;
+  display: inline-block;
+  width: 0;
+  height: 1.1em;
+  margin-left: -1px;
+  margin-right: -1px;
+  border-left: 2px solid;
+  vertical-align: text-bottom;
+  pointer-events: none;
+  z-index: 20;
+}
+
+.remote-cursor-label {
+  position: absolute;
+  top: -1.35em;
+  left: -1px;
+  font-size: 10px;
+  line-height: 1;
+  color: #fff;
+  padding: 2px 5px;
+  border-radius: 5px;
+  white-space: nowrap;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.25);
+  user-select: none;
+}
+
+.remote-selection {
+  border-radius: 2px;
+}
+
+/* Base custom animations */
+@keyframes slide-up {
+  from {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes scale-in {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-slide-up {
+  animation: slide-up 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-scale-in {
+  animation: scale-in 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Matte liquid glass blob animations */
+@keyframes liquid-drift-1 {
+  0% {
+    transform: translate(0, 0) scale(1) rotate(0deg);
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  50% {
+    transform: translate(40px, -60px) scale(1.2) rotate(180deg);
+    border-radius: 40% 60% 50% 50% / 40% 60% 50% 50%;
+  }
+  100% {
+    transform: translate(-20px, 30px) scale(0.9) rotate(360deg);
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+}
+
+@keyframes liquid-drift-2 {
+  0% {
+    transform: translate(0, 0) scale(1.1) rotate(0deg);
+    border-radius: 50% 50% 30% 70% / 50% 60% 40% 60%;
+  }
+  50% {
+    transform: translate(-50px, 40px) scale(0.9) rotate(-180deg);
+    border-radius: 60% 40% 70% 30% / 50% 30% 70% 50%;
+  }
+  100% {
+    transform: translate(30px, -20px) scale(1) rotate(-360deg);
+    border-radius: 50% 50% 30% 70% / 50% 60% 40% 60%;
+  }
+}
+
+.animate-liquid-1 {
+  animation: liquid-drift-1 18s ease-in-out infinite;
+}
+
+.animate-liquid-2 {
+  animation: liquid-drift-2 22s ease-in-out infinite;
+}
+
+.animate-liquid-3 {
+  animation: liquid-drift-1 14s ease-in-out infinite reverse;
+}
